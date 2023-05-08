@@ -19,7 +19,7 @@ public class BookStoreDemoApiApplication {
     private CategoryDao categoryDao;
 
     @Transactional
-    @Bean @Profile("h2")
+    @Bean //@Profile("h2")
     public ApplicationRunner runner(){
         return  args -> {
             Category c1=new Category();

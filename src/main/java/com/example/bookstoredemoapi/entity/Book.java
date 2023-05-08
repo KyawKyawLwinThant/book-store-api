@@ -16,10 +16,14 @@ public class Book {
     private Integer id;
     private String title;
     private double price;
+    @Column(name = "year_published")
     private LocalDate yearPublished;
     private String publisher;
+    @Column(name = "image_url")
     private String imagUrl;
+    @Column(name = "author_name")
     private String authorName;
+    @JoinColumn(name = "category_id")
     @ManyToOne
     private Category category;
 
