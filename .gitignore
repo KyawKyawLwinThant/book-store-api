@@ -18,6 +18,9 @@ target/
 *.iws
 *.iml
 *.ipr
+auth_db.lock.db
+auth_db.mv.db
+auth_db.trace.db
 
 ### NetBeans ###
 /nbproject/private/
